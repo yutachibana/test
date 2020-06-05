@@ -1,0 +1,360 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'mplus-1m-thin';
+  src: url("http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.eot");
+  src: url("http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.eot?#iefix") format("embedded-opentype"), url("http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.woff") format("woff"), url("http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.ttf") format("truetype");
+}
+
+html {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#nav-input {
+  margin-left: 320px;
+  position: absolute;
+  top: -440px;
+  z-index: 9999;
+}
+
+#nav-drawer {
+  position: relative;
+}
+
+/* チェックボックス等は非表示に */
+.nav-unshown {
+  display: none;
+}
+
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  margin-left: 320px;
+  position: absolute;
+  top: -484px;
+  z-index: 9999;
+}
+
+/*閉じる用の薄黒箇所*/
+#nav-close {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+/*メニューの中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 47px;
+  z-index: 9000;
+  width: 328px;
+  max-width: 330px;
+  /*最大幅（お好みで調整を）*/
+  height: 100%;
+  background-color: #F2EDE9;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  text-align: left;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 100;
+  padding-top: 210px;
+  line-height: 2.9rem;
+}
+
+#nav-content h2,
+#nav-content h3,
+#nav-content h4 {
+  font-weight: 100;
+  font-size: 1.35rem;
+  padding-left: 50px;
+}
+
+#nav-content ul {
+  padding-left: 70px;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  list-style: none;
+  font-size: 1.175rem;
+}
+
+/*チェックがついたら表示させる*/
+#nav-input:checked ~ #nav-close {
+  display: block;
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+#front {
+  width: 375px;
+}
+
+#front .wrapper {
+  width: 375px;
+}
+
+#front header {
+  background-color: #FFF7EF;
+}
+
+#front header nav {
+  text-align: right;
+  padding-top: 10px;
+}
+
+#front header nav a {
+  padding-right: 15px;
+  color: #707070;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+#front header h1 {
+  text-align: center;
+  color: #707070;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+#front header .background-img {
+  height: 285px;
+  background-image: url("images/iPhone/front-bg.png");
+  background-repeat: no-repeat;
+  margin-top: 44px;
+}
+
+#front header .background-img h2 {
+  padding-top: 110px;
+  padding-left: 18px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 2.25rem;
+}
+
+#front header .search_container .fontawesome {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 0.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.55rem;
+  margin-left: 22px;
+  margin-top: 40px;
+}
+
+#front header .search_container input[type="text"] {
+  border: 1px solid #363535;
+  padding: 3px 10px;
+  border-radius: 10px;
+  height: 2.8rem;
+  width: 230px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#front header .search_container input[type="text"]:focus {
+  outline: 0;
+  height: 2.8rem;
+}
+
+#front header .search_container input[type="submit"] {
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1rem;
+  background: #F2EDE9;
+  border: 1px solid #363535;
+  border-radius: 10px;
+  color: #707070;
+  outline: none;
+  width: 80px;
+  height: 2.8rem;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+#front .content {
+  background-color: #FFFDFA;
+}
+
+#front .takeout-area {
+  background-image: url("images/iPhone/front-bg2.png");
+  height: 681px;
+  background-position: 20px 20px;
+  background-size: 335px;
+  padding-top: 25px;
+  padding-left: 15px;
+}
+
+#front .takeout-area h2 {
+  font-size: 2.5rem;
+  color: #EAEAEA;
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+#front .takeout-area .section-area {
+  margin-top: 168px;
+  margin-left: 17px;
+}
+
+#front .takeout-area section {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 312px;
+  height: 160px;
+  color: #707070;
+}
+
+#front .takeout-area section h3 {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+  font-size: 1.37rem;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+#front .takeout-area section p {
+  padding-top: 16px;
+  padding-left: 10px;
+}
+
+#front .takeout-area .sub-content1 {
+  margin-bottom: 10px;
+}
+
+#front .eatin-area {
+  background-image: url("images/iPhone/front-bg3.png");
+  height: 681px;
+  background-position: 20px 0px;
+  background-size: 335px;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+#front .eatin-area h2 {
+  font-size: 2.5rem;
+  color: #EAEAEA;
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+#front .eatin-area .section-area {
+  margin-top: 148px;
+  margin-left: 17px;
+}
+
+#front .eatin-area section {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 312px;
+  height: 160px;
+  color: #707070;
+}
+
+#front .eatin-area section h3 {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+  font-size: 1.37rem;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+#front .eatin-area section p {
+  padding-top: 16px;
+  padding-left: 10px;
+}
+
+#front .eatin-area .sub-content1 {
+  margin-bottom: 10px;
+}
+
+#front .map-area {
+  background-image: url("images/iPhone/front-map.png");
+  height: 691px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+#front .map-area .upper-area {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 410px;
+}
+
+#front .map-area h2 {
+  font-size: 1.75rem;
+  font-weight: 200;
+  margin-left: 40px;
+  padding-top: 40px;
+  color: #fff;
+}
+
+#front .map-area hr {
+  width: 75px;
+  height: 3px;
+  background-color: #fff;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+#front .map-area p {
+  width: 295px;
+  margin-left: 40px;
+  margin-top: 3px;
+  line-height: 2.1rem;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 100;
+}
+
+#front .map-area .lower-area {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 281px;
+}
+
+footer {
+  background-color: #9D8670;
+  height: 150px;
+  color: #fff;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+footer div {
+  padding-top: 32px;
+  padding-left: 60px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 1.175rem;
+  font-weight: 300;
+}
+
+footer p {
+  padding-top: 5px;
+  padding-left: 85px;
+}
+/*# sourceMappingURL=style.css.map */
