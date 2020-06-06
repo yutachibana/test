@@ -97,6 +97,39 @@ body {
   font-size: 1.175rem;
 }
 
+#nav-content .my-parts {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#nav-content .my-parts span::before,
+#nav-content .my-parts span::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 84%;
+  height: 10%;
+  margin: -8% 0 0 -42%;
+  background: #868383;
+}
+
+#nav-content .my-parts span::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#nav-content .my-parts span::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 /*チェックがついたら表示させる*/
 #nav-input:checked ~ #nav-close {
   display: block;
