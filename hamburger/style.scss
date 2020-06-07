@@ -401,3 +401,98 @@ footer {
   }
 }
 
+// ここからarchiveページ　　　　　　　　　　　　　　　　　　　　　　　　
+
+#archive {
+  width:375px;
+  
+  .wrapper {
+    width: 375px;
+  }
+
+  header {
+    background-color: $base-color;
+
+    nav {
+      text-align: right;
+      padding-top: 10px;
+
+      a {
+        padding-right: 15px;
+        color: $gray-color;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: $gray-color;
+      font-weight: 500;
+      font-size: 2.5rem;
+    }
+
+    .background-img {
+      height: 285px;
+      background-image: url("images/iPhone/archive-bg1.png");
+      background-repeat:no-repeat;
+      margin-top:44px;
+
+      h2 {
+        padding-top: 110px;
+        padding-left: 18px;
+        color: #fff;
+        font-weight: 100;
+        font-size: 2.25rem;
+      }
+    }
+
+    .search_container {
+
+      .fontawesome {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 0.8;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 1.55rem;
+        margin-left:22px;
+        margin-top:40px;
+      }
+
+      input[type="text"] {
+        border: 1px solid rgb(54, 53, 53);
+        padding: 3px 10px;
+        border-radius: 10px;
+        height: 2.8rem;
+        width:230px;
+        overflow: hidden;
+        background-color:#fff;
+      }
+
+      input[type="text"]:focus {
+        outline: 0;
+        height: 2.8rem;
+      }
+
+      input[type="submit"] {
+        cursor: pointer;
+        font-family: FontAwesome;
+        font-size: 1rem;
+        background: #F2EDE9;
+        border: 1px solid rgb(54, 53, 53);
+        border-radius: 10px;
+        color: $gray-color;
+        outline: none;
+        width: 80px;
+        height: 2.8rem;
+        margin-left:20px;
+        display: inline-block;
+      }
+
+    }// .search_containerのカッコ
+
+  }
+}
