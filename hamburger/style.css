@@ -427,15 +427,27 @@ footer p {
   height: 285px;
   background-image: url("images/iPhone/archive-bg1.png");
   background-repeat: no-repeat;
+  background-position: top -748px left 0px;
   margin-top: 44px;
+}
+
+#archive header .background-img .background-shadow {
+  height: 285px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #archive header .background-img h2 {
   padding-top: 110px;
-  padding-left: 18px;
+  padding-left: 30px;
   color: #fff;
-  font-weight: 100;
+  font-weight: bold;
   font-size: 2.25rem;
+}
+
+#archive header .background-img p {
+  color: #fff;
+  padding-left: 30px;
+  padding-top: 5px;
 }
 
 #archive header .search_container .fontawesome {
@@ -479,5 +491,115 @@ footer p {
   height: 2.8rem;
   margin-left: 20px;
   display: inline-block;
+}
+
+#archive .archive-content {
+  background-color: #FFFDFA;
+}
+
+#archive .archive-content section:nth-child(n+3) {
+  padding-top: 20px;
+}
+
+#archive .archive-content section {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+#archive .archive-content section h2 {
+  font-weight: 300;
+  font-size: 1.70rem;
+  margin-left: 20px;
+  padding-top: 28px;
+}
+
+#archive .archive-content section p {
+  width: 350px;
+  margin-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  font-weight: 300;
+  line-height: 1.70rem;
+}
+
+#archive .archive-content .sub-content-area {
+  color: #fff;
+}
+
+#archive .archive-content .sub-content-area img {
+  height: 235px;
+  margin-left: 17px;
+}
+
+#archive .archive-content .sub-content-area .sub-content-info {
+  background-color: #3C2B1C;
+  height: 355px;
+  width: 342px;
+  margin-top: -7px;
+  margin-left: 17px;
+}
+
+#archive .archive-content .sub-content-area .sub-content-info h2 {
+  font-size: 1.25rem;
+}
+
+#archive .archive-content .sub-content-area .sub-content-info p {
+  padding-bottom: 0px;
+  width: 250px;
+}
+
+#archive .archive-content .sub-content-area .sub-content-info p:nth-child(3) {
+  padding-top: 0px;
+}
+
+#archive .archive-content .sub-content-area .sub-content-info a {
+  background-color: #fff;
+  color: #707070;
+  text-align: center;
+  display: block;
+  width: 160px;
+  padding: 10px 0px;
+  margin: 50px auto;
+  border-radius: 40px;
+}
+
+#archive .archive-content .paging-area {
+  height: 115px;
+  margin-left: 18px;
+  width: 342px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#archive .archive-content .paging-area div {
+  margin-top: 64px;
+  margin-bottom: 27px;
+}
+
+#archive .archive-content .paging-area div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#archive .archive-content .paging-area div a img {
+  width: 19px;
+  height: 19px;
+  margin-top: 3px;
+}
+
+#archive .archive-content .paging-area div a p {
+  color: #707070;
+}
+
+#archive .archive-content .paging-area div a .left {
+  margin-left: 5px;
+}
+
+#archive .archive-content .paging-area div a .right {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
