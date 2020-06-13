@@ -6,11 +6,32 @@
        url('http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.woff') format('woff'),
        url('http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.ttf') format('truetype');
 }
+@mixin align-center($margin: 0px){
+  display:block;
+  margin: $margin auto;
+}
+
+@mixin button($margin: 0px) {
+          background-color:#fff;
+          color:$gray-color;
+          text-align:center;
+          display:block;
+          width:160px;
+          padding: 10px 0px;
+          margin:$margin auto;
+          border-radius:40px;
+}
 
 $gray-color:#707070;
 $base-color:#FFF7EF;
 $font-M:'M PLUS 1p', sans-serif;
 $font-R:'Roboto', sans-serif;
+$back-color:#FFFDFA;
+$shadow-color-bold:rgba(0,0,0,.6);
+$shadow-color:rgba(0,0,0,.5);
+$shadow-color-thin:rgba(0,0,0,.4);
+$brown-color:#3C2B1C;
+$font-color:#3C2A10;
 
 html {
   font-size: 100%
@@ -229,6 +250,9 @@ body {
         height: 2.8rem;
         margin-left:20px;
         display: inline-block;
+        position: absolute;
+        top: 121px;
+        left: 245px;
       }
 
     }// .search_containerのカッコ
@@ -401,3 +425,6 @@ footer {
   }
 }
 
+@import "css-and-scss/archive.scss";
+
+@import "css-and-scss/single.scss";
